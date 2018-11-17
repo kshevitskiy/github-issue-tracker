@@ -1,25 +1,5 @@
 @import 'variables.scss';
+@import 'base.scss';
+@import 'utilities.scss';
 
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body, 
-html {
-  padding: 0;
-  margin: 0;
-  background-color: $primary;
-  color: $default;
-  font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-body {
-  // background-image: url('/assets/images/background.jpg');
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  float: left;
-}

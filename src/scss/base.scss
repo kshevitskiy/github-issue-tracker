@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body, 
+html {
+  padding: 0;
+  margin: 0;
+  background-color: $primary;
+  color: $default;
+}
+
+body {
+  font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+  background-image: url('/assets/images/background.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  float: left;
+  overflow: hidden;
+}
