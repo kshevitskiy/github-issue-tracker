@@ -1,3 +1,18 @@
+// Color palette
 $default: #ffffff;
-$primary: #1c2b34;
-$secondary: #ff99aa;
+$primary: #21233d;
+$secondary: #292a48;
+
+$gray-base: #080606;
+$gray-dark: #8a8995;
+$gray: #e0e0e0;
+$gray-light: #f6f6f6;
+
+$danger: #ff594f;
+$warning: #ffbc1b;
+$success: #00cd46;
+
+// Layout
+$offset: 15px;
+$border-radius-base: 10px;
+$border-radius-card: ($border-radius-base / 2);

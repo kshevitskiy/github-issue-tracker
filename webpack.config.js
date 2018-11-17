@@ -66,7 +66,15 @@ const config = {
             }
           }
         ]
-      }      
+      },  
+        
+      { 
+        test: /\.ejs$/, 
+        use: [
+          'ejs-compiled-loader'
+        ] 
+      }
+
     ]
   },
 
@@ -87,7 +95,8 @@ const config = {
       inject: true,
       hash: false,
       title: 'GitHub issue tracker',
-      template: './index.html',
+      template: './index.ejs',
+      filename: 'index.html',
     })
   ] 
 };

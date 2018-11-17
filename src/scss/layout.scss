@@ -9,7 +9,7 @@ html {
   padding: 0;
   margin: 0;
   background-color: $primary;
-  color: $default;
+  color: $gray-base;
 }
 
 body {
@@ -20,4 +20,15 @@ body {
   height: 100vh;
   float: left;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  overflow: hidden;
+  border-radius: $border-radius-base;
+  box-shadow: 0 0 $offset rgba($gray-base, .2),
+              0 0 ($offset * 2) rgba($gray-base, .1);
+  display: flex;
 }
