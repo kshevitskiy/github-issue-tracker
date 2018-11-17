@@ -1,0 +1,14 @@
+.controls {
+  padding: $offset 0;
+}
+
+.controls--bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .button:not(:last-child) {
+    margin-right: ($offset - 5px);    
+  }
+}

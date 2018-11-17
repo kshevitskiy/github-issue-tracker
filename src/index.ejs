@@ -11,5 +11,12 @@
 
 <body>
   <h1 class="u-display--hidden"><%= htmlWebpackPlugin.options.title %></h1>
+  <div id="app" class="app">
+    <aside class="sidebar">
+      <% include src/html/controls-bar %>
+    </aside>
+    <main class="window">     
+    </main>
+  </div>
 </body>
 </html>

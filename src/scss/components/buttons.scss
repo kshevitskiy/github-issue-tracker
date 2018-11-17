@@ -1,0 +1,25 @@
+.button {
+  border: 0;
+  appearance: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.system-button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border-radius: 5px;
+
+  &--danger {
+    @include button-style($danger);
+  }
+
+  &--warning {
+    @include button-style($warning);
+  }
+
+  &--success {
+    @include button-style($success);
+  }
+}
