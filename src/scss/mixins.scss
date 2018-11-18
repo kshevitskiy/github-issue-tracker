@@ -2,6 +2,10 @@
   background-color: $color;
 
   &:hover {
-    background-color: darken($color, 5%)
+    background-color: darken($color, 10%);
   }
+}
+
+@mixin transition($type: all, $duration: $transition-duration, $easing: $transition-easing) {
+  transition: $type $duration $easing;
 }

@@ -1,3 +1,7 @@
+const issues = require('./src/data');
+
+console.log('Test__________ ', issues);
+
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -95,6 +99,7 @@ const config = {
       inject: true,
       hash: false,
       title: 'GitHub issue tracker',
+      data: issues,
       template: './index.ejs',
       filename: 'index.html',
     })
