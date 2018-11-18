@@ -15,8 +15,6 @@ html {
 body {
   font-family: $font-family-primary;
   font-size: $font-size-base;
-  background-image: url('/assets/images/background.jpg');
-  background-size: cover;
   width: 100%;
   height: 100vh;
   float: left;
@@ -26,14 +24,51 @@ body {
   justify-content: center;
 }
 
+body,
+.app::before {
+  background-image: url('/assets/images/background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 a {
   text-decoration: none;
 }
 
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .app {
-  overflow: hidden;
   border-radius: $border-radius-base;
   box-shadow: 0 0 $offset rgba($gray-base, .2),
               0 0 ($offset * 2) rgba($gray-base, .1);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
   display: flex;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: blur(10px);
+    margin: -($offset + 5px);
+  }  
+}
+
+.date {
+  font-size: $font-size-xs;
+  color: $gray-dark;
+}
+
+.issues {
+  width: 100%;
+  margin-bottom: $offset;
 }

@@ -1,0 +1,14 @@
+<div class="issues">
+  <% issues.forEach(function(item) { %>
+    <div class="group">
+      <div class="group__date date">
+        <%- item.date %>
+      </div>
+      <ul class="group__list">
+        <% item.issues.forEach(function(issue) { %>
+          <% include components/issue-card %>
+        <%});%>  
+      </ul>
+    </div>
+  <%});%>
+</div>
