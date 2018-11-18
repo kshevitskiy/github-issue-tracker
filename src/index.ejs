@@ -1,3 +1,6 @@
+<% const title = htmlWebpackPlugin.options.title; %>
+<% const issues = htmlWebpackPlugin.options.data; %>
+
 <!DOCTYPE html>
 <html>
 
@@ -5,27 +8,21 @@
   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    <%= htmlWebpackPlugin.options.title %>
+    <%= title %>
   </title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 
 <body>
-  <h1 class="u-display--hidden"><%= htmlWebpackPlugin.options.title %></h1>
   <div id="app" class="app">
+    
     <aside class="sidebar">
       <% include src/html/controls-bar %>
       <% include src/html/navigation %>
     </aside>
+
     <main class="window">
-      <ul>
-        <% htmlWebpackPlugin.options.data.forEach(function(issue){ %>
-          <li>
-            <%- issue.title %>
-            <%- issue.solved %>
-          </li>
-        <%});%>
-     </ul>      
+      <% include src/html/issues-list %>
     </main>
   </div>
 </body>

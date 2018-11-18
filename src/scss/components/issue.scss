@@ -1,0 +1,33 @@
+.issue {
+  $root: &;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__title {
+    padding-right: $offset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__status {
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+
+  &__icon {
+    width: $icon-size-base;
+    pointer-events: none;
+    fill: $gray-light;
+    stroke: $gray;
+
+    #{$root}--featured & {
+      fill: $primary;
+      stroke: $primary;      
+    }
+  }
+}

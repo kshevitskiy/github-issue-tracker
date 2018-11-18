@@ -1,6 +1,7 @@
 .sidebar {
   width: 150px;
-  background-color: rgba($primary, .95);
+  background-color: rgba($primary, .85);
   padding: 0;
   flex-shrink: 0;
+  position: relative;
 }
