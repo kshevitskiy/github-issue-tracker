@@ -1,0 +1,20 @@
+.icon {
+  display: inline-block;
+  width: $icon-size-base;
+  height: $icon-size-base;
+  background-size: $icon-size-base;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon-github {
+  background-image: url('/assets/icons/svg/icon-github.svg');
+}
+
+.icon-info {
+  background-image: url('/assets/icons/svg/icon-open-issue.svg');
+}
+
+.icon-done {
+  background-image: url('/assets/icons/svg/icon-closed-issue.svg');
+}

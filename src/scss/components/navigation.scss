@@ -1,0 +1,52 @@
+.nav {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nav-item {
+  $root: &;
+  width: 100%;
+  padding: $offset;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  @include transition(background-color);
+  
+  &--active {
+    background-color: $secondary;
+  }
+
+  &:not(#{$root}--active) {
+
+    &:hover {
+      background-color: rgba($secondary, .5);
+    }
+  }
+
+}
+
+.nav-item {
+
+  &__icon {
+    fill: $default;
+    margin-right: 9px;
+  }
+
+  &__label {
+    font-size: $font-size-sm;
+    color: $default;
+    margin-right: $offset;
+  }
+
+  &__meta {
+    font-family: $font-family-secondary;
+    font-size: $font-size-sm;
+    color: $gray-dark;
+    margin-left: auto;
+  }
+}

@@ -12,7 +12,21 @@ $danger: #ff594f;
 $warning: #ffbc1b;
 $success: #00cd46;
 
+// Typography
+$font-family-primary: 'Roboto', 'Helvetica Neue', Helvetica, sans-serif;
+$font-family-secondary: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
+$font-size-base: 15px;
+$font-size-sm: 14px;
+$font-size-xs: 12px;
+
+// Icons
+$icon-size-base: 16px;
+
 // Layout
 $offset: 15px;
 $border-radius-base: 10px;
 $border-radius-card: ($border-radius-base / 2);
+
+// Transitions
+$transition-duration: .2s;
+$transition-easing: ease-in-out;
