@@ -1,3 +1,4 @@
+
 const data = [
   { 
     title: 'Page changes', 
@@ -60,7 +61,7 @@ const data = [
     date: '14-07-2016' 
   }
 ];
-
+  
 const values = data.reduce((issues, issue) => {
   issues[issue.date] = issues[issue.date] || [];
   issues[issue.date].push(issue);
@@ -70,4 +71,4 @@ const values = data.reduce((issues, issue) => {
 const issues = Object.keys(values).map((key) => ({date: key, issues: [...values[key]]}));
 
 
-module.exports = issues;
+module.exports = issues
