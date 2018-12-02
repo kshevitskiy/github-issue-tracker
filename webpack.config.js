@@ -1,6 +1,5 @@
 const issues = require('./src/data');
 
-console.log('Test__________ ', issues);
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
